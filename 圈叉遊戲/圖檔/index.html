@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>井字遊戲</title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body onload="init()">
+        <div id = "workplace">
+            <h1>井字遊戲</h1>
+            <table align = "center" border = "1">
+                <tr>
+                    <td>
+                        <img alt = "E" src = "圖檔/E.gif" onclick="ch(0)">
+                    </td>
+                    <td>
+                        <img alt = "E" src = "圖檔/E.gif" onclick="ch(1)">
+                    </td>
+                    <td>
+                        <img alt = "E" src = "圖檔/E.gif" onclick="ch(2)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt = "E" src = "圖檔/E.gif" onclick="ch(3)">
+                    </td>
+                    <td>
+                        <img alt = "E" src = "圖檔/E.gif" onclick="ch(4)">
+                    </td>
+                    <td>
+                        <img alt = "E" src = "圖檔/E.gif" onclick="ch(5)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img alt = "E" src = "圖檔/E.gif" onclick="ch(6)">
+                    </td>
+                    <td>
+                        <img alt = "E" src = "圖檔/E.gif" onclick="ch(7)">
+                    </td>
+                    <td>
+                        <img alt = "E" src = "圖檔/E.gif" onclick="ch(8)">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id = "playerArea">
+            <br><br><br>
+            <p id = "end">player</p>
+            <input id = "playbutton" type= "button" value = "play">
+            <div class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <h2>請選擇你是O還是X</h2>
+                        <br>
+                        <input type = "button" id = "O" value = "O">
+                        <input type = "button" id = "X" value = "X">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <h2>computer player time</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src = "main.js" defer="defer"></script>
+</html>

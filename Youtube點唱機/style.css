@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+h2{
+    /*預留歌曲名稱顯示空間*/
+    height: 32px;
+    font-size: medium;
+}
+#disc
+{
+    height: 400px;
+    width:400px;
+    -webkit-animation:'playdisc' 5s linear infinite;
+    animation: 'playdisc' 5s linear infinite;
+    animation-play-state: paused;
+}
+@keyframes playdisc 
+{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}

@@ -1,0 +1,17 @@
+.myArea
+{
+    width:1100px;
+    height:400px;
+}
+.myleftArea
+{
+    width: 600px;
+    height:400px;
+    float:left; 
+}
+.myrightArea
+{
+    width:500px;
+    height:400px;
+    float:right;
+}

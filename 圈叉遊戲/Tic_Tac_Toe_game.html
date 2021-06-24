@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>放鬆天地-軍事小測驗</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../carousel.css" rel="stylesheet">
+    <link href="style.css" rel = "stylesheet">
+  </head>
+  <body onload="init()"> 
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">放鬆天地</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="../心理測驗/Mind_quiz.html">心理測驗</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../軍事小測試/ROCN_quiz.html">猜台灣海軍艦名小測驗</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">井字遊戲<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../simpleRPG/Maze_game.html">迷宮遊戲</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Youtube點唱機/youtube_disc.html">心情點唱機</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../關於作者/About_Me.html">About_Me</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            -->
+          </ul>
+          <!--
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          -->
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+      <div class="container marketing">
+        <hr class="featurette-divider">
+        <!-- START THE FEATURETTES -->
+        <div class="mymodal1">
+              <div class="mymodal-dialog">
+                  <div class="mymodal-content">
+                      <h2>請選擇你是O還是X</h2>
+                      <br>
+                      <input type = "button" id = "O" value = "O">
+                      <input type = "button" id = "X" value = "X">
+                  </div>
+              </div>
+        </div>
+        <div id = "workplace">
+          <h1>井字遊戲</h1>
+          <table align = "center" border = "1">
+              <tr>
+                  <td>
+                      <img alt = "E" src = "圖檔/E.gif" onclick="ch(0)">
+                  </td>
+                  <td>
+                      <img alt = "E" src = "圖檔/E.gif" onclick="ch(1)">
+                  </td>
+                  <td>
+                      <img alt = "E" src = "圖檔/E.gif" onclick="ch(2)">
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <img alt = "E" src = "圖檔/E.gif" onclick="ch(3)">
+                  </td>
+                  <td>
+                      <img alt = "E" src = "圖檔/E.gif" onclick="ch(4)">
+                  </td>
+                  <td>
+                      <img alt = "E" src = "圖檔/E.gif" onclick="ch(5)">
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <img alt = "E" src = "圖檔/E.gif" onclick="ch(6)">
+                  </td>
+                  <td>
+                      <img alt = "E" src = "圖檔/E.gif" onclick="ch(7)">
+                  </td>
+                  <td>
+                      <img alt = "E" src = "圖檔/E.gif" onclick="ch(8)">
+                  </td>
+              </tr>
+          </table>
+        </div>
+        <div id = "playerArea">
+            <h1>遊戲說明</h1>
+            <p>點擊play鍵後，選擇自己所代表的符號。之後在左方的棋盤點選您要放的位置
+              <br>當遊戲分出勝負後，可以點選restart，重新開始遊戲。
+            </p>
+            <br><br>
+            <h2 id = "end">player</h2>
+            <input id = "playbutton" type= "button" value = "play">
+        </div>
+        <div class="mymodal2">
+            <div class="mymodal-dialog">
+                <div class="mymodal-content">
+                    <h2>computer player time</h2>
+                </div>
+            </div>
+        </div>
+        <!-- /END THE FEATURETTES -->
+      </div><!-- /.container -->
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p class="float-left">&copy; 2020-2021 元智大學,  &middot; <a href="../關於作者/About_Me.html">About_Me</p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../assets/js/vendor/popper.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../assets/js/vendor/holder.min.js"></script>
+    <script src = "main.js"></script>
+  </body>
+</html>
