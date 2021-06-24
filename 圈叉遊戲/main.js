@@ -36,7 +36,7 @@ $("#playbutton").click(function()
 })
 function ch(i)
 {
-    if(start == 1)
+    if(start == 1 && winflag == 0) 
     {
         if(current_table_element[i].alt !='E')
             return;
